@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="js/main.js" defer></script>
+<title>API</title>
+</head>
+<body>
+<h1>F1 API</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-nd-12">
+            <form name="testData" id="testDataForm">
+                <label for="season">Season</label>
+                <input type="text" name='season' id='season'>
+                <label for="round">Round</label>
+                <input type="text" name='round' id='round'>
+                <button type='submit' id='submitButton' >Submit</button>
+            </form>
+            <button class="btn btn-primary" onclick='load_data()'>Get Data</button>
+            <button class="btn btn-danger" onclick='clear_data()'>Clear Data</button>
+            <section class="list-group f1-list">
+
+            </section>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
